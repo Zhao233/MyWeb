@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div居于页面正中间</title>
+</head>
+<script>
+    function isUser() {
+        var username = document.getElementById(UserName);
+        var password = document.getElementById(PassWord);
+        var s = document.
+
+        if(username == "zhao" && password == "211351" )
+        {
+            window.location.replace("baidu.html");
+        }
+        else{
+            alert("密码或用户有错误，请重新输入")
+        }
+
+    }
+</script>
+
+<link href="cssFile/style.css" rel="stylesheet" type="text/css">
+<body class="main" style="background: url(image/potw1636a.jpg) no-repeat; background-size: cover;">
+
+    <div class="main">
+        <form>
+            <div>
+                <input type="text"  id="UserName" class="UserName" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" >
+            </div>
+            <br/>
+            <div>
+                <input type="password" id="PassWord" class="PassWord"value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+            </div>
+            <br/>
+                <input type="submit" class="loginButton" value="Login" onclick="return isUser()">
+        </form>
+    </div>
+</body>
+</html>
